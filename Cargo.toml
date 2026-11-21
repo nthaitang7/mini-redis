@@ -1,0 +1,23 @@
+[package]
+name = "mini-redis"
+version = "0.1.0"
+edition = "2021"
+description = "In-memory Redis-compatible cache server over TCP"
+
+[lib]
+name = "mini_redis"
+path = "src/lib.rs"
+
+[[bin]]
+name = "mini-redis"
+path = "src/main.rs"
+
+[[bin]]
+name = "baseline"
+path = "src/bin/baseline.rs"
+
+[[bin]]
+name = "load"
+path = "src/bin/load.rs"
+
+[dependencies]
